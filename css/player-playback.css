@@ -1,0 +1,17 @@
+.playerPlayback{
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;/*alineado en el eje transversal*/
+  gap: .5rem;
+}
+
+.playerPlayback-slider{
+  flex: 1; /*flex= grow:1 shrink:1 basis:1 que se engrande todo lo que pueda entre elementos*/
+}
+
+.playerPlayback-progressTime{
+  /* border: 1px solid red; */
+  line-height: 1;
+  font: var(--small);
+  /*top: 1px;*/ /*por si se ve mas arriba i abajo con el slider casos especificos*/
+}
