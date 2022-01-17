@@ -32,7 +32,27 @@
   <title>Spotifu</title>
 </head>
 <body class="body">
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, atque hic quod repellendus tempora repellat explicabo eius rem voluptas. Alias voluptate vitae omnis dolore maiores nesciunt ipsum suscipit, iste magni?</p>
+  <div class="nowPlaying">
+    <div class="nowPlaying-cover">
+      <img src="./img/grandescape.png" width="56" height="56" alt="Portada de Grand Escape (feat. Tokio Miura) de RADWIMPS, Toko Miura" title="Portada de Grand Escape (feat. Tokio Miura) de RADWIMPS, Toko Miura">
+    </div>
+    <div class="nowPlaying-details">
+      <div class="nowPlaying-description">
+          <a href="#song" class="nowPlaying-title">
+            Grand Escape (feat. Tokio Miura)
+          </a>
+        <a href="#RADWIMPS" class="nowPlaying-artist">
+          RADWIMPS, Toko Miura
+        </a>
+      </div>
+      <div class="nowPlaying-actions">
+        <button class="player-control" role="switch" aria-label="Guardar en tu biblioteca" title="Guardar en tu biblioteca">
+          <!-- Como este icono cumplirá un rol pero no es un boton, colocamos presentation -->
+          <i class="icon-heart" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </div>
 
   <div class="playerControls">
     <div class="playerControls-buttons" aria-label="Controles de Reproducción">
