@@ -7,5 +7,5 @@
 .playerVolume-slider{
   flex: 1;
   /*Este slider será de ancho fijo asi que podemos otorgarle un ancho necesario*/
-  max-inline-size: 6rem;
+  inline-size: 6rem;
 }
