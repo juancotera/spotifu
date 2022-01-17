@@ -35,7 +35,7 @@
   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, atque hic quod repellendus tempora repellat explicabo eius rem voluptas. Alias voluptate vitae omnis dolore maiores nesciunt ipsum suscipit, iste magni?</p>
 
   <div class="playerControls">
-    <div class="playerControls-buttons">
+    <div class="playerControls-buttons" aria-label="Controles de Reproducción">
       <button class="buttonIcon" aria-label="Anterior" title="Anterior">
         <i class="icon-prev" aria-hidden="true"></i>
       </button>
@@ -56,6 +56,21 @@
         </div>
       </div>
       <span class="playerPlayback-progressTime">01:40</span>
+    </div>
+  </div>
+
+  <div class="playerVolume">
+    <button class="player-control" aria-label="Silenciar" aria-describedby="volume-icon">
+      <!-- Como este icono cumplirá un rol pero no es un boton, colocamos presentation -->
+      <i class="icon-volumeUp" id="volume-icon" role="presentation" aria-label="Volumen alto"></i>
+    </button>
+    <div class="playerVolume-slider">
+      <div class="slider">
+        <div class="slider-progress">
+          <button class="slider-button" aria-label="Controlar progreso de la reproducción"></button>
+          <!--aria-label se agrega cuando el elemento no contendrá nada en su interior -->
+        </div>
+      </div>
     </div>
   </div>
 
