@@ -1,0 +1,14 @@
+/*importamos estos elementos por que estos estaran dentro del sidebar, y si quitamos el sidebar se quitaran todos ellos tambien*/
+@import './logo.css';
+@import './list.css';
+@import './menu.css';
+
+.sidebar{
+  background: var(--gray60);
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  padding-block-start: 1.5rem;
+  padding-block-end: 1.5rem;
+  /* inline-size: 200px; */
+}
