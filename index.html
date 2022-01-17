@@ -1,6 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta property="og:title" content="Mi proyecto del Curso HTML y CSS" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://juancotera.github.io/htmlycssesencial/" />
+  <meta property="og:image" content="https://juancotera.github.io/htmlycssesencial/img/dom.png" />
+  <meta property="og:description" content="Todo lo que necesitas saber en tu día a día como frontend" />
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +32,12 @@
   <title>Spotifu</title>
 </head>
 <body class="body">
+  <div class="slider">
+    <div class="slider-progress">
+      <button class="slider-button" aria-label="Controlar progreso de la reproducción"></button><!--aria-label se agrega cuando el elemento no contendrá nada en su interior -->
+    </div>
+  </div>
+
   <div class="sidebar">
     <header class="logo">
       <a href="/" aria-current="page">
@@ -54,22 +84,34 @@
           </span>
         </li>
         <li class="list-item">
-          <a href="#" class="link">Naruto al 100% para progr…</a>
+          <span class="ellipsis">
+            <a href="#" class="link">Naruto al 100% para programar chevere</a>
+          </span>
         </li>
         <li class="list-item">
-          <a href="#" class="link">Para cantar en la ducha</a>
+          <span class="ellipsis">
+            <a href="#" class="link">Para cantar en la ducha</a>
+          </span>
         </li>
         <li class="list-item">
-          <a href="#" class="link">Sin parar</a>
+          <span class="ellipsis">
+            <a href="#" class="link">Sin parar</a>
+          </span>
         </li>
         <li class="list-item">
-          <a href="#" class="link">Naruto openings</a>
+          <span class="ellipsis">
+            <a href="#" class="link">Naruto openings</a>
+          </span>
         </li>
         <li class="list-item">
-          <a href="#" class="link">Boku no pico</a>
+          <span class="ellipsis">
+            <a href="#" class="link">Boku no pico</a>
+          </span>
         </li>
         <li class="list-item">
-          <a href="#" class="link">This is Pokémon</a>
+          <span class="ellipsis">
+            <a href="#" class="link">This is Pokémon</a>
+          </span>
         </li>
         <li class="list-item">
           <span class="ellipsis">
@@ -77,25 +119,39 @@
           </span>
         </li>
         <li class="list-item">
-          <a href="#" class="link">Mis pistas de shazam</a>
+          <span class="ellipsis">
+            <a href="#" class="link">Mis pistas de shazam</a>
+          </span>
         </li>
         <li class="list-item">
-          <a href="#" class="link">Audio Library</a>
+          <span class="ellipsis">
+            <a href="#" class="link">Audio Library</a>
+          </span>
         </li>
         <li class="list-item">
-          <a href="#" class="link">Amor y otras</a>
+          <span class="ellipsis">
+            <a href="#" class="link">Amor y otras</a>
+          </span>
         </li>
         <li class="list-item">
-          <a href="#" class="link">Latin</a>
+          <span class="ellipsis">
+            <a href="#" class="link">Latin</a>
+          </span>
         </li>
         <li class="list-item">
-          <a href="#" class="link">Pokemon</a>
+          <span class="ellipsis">
+            <a href="#" class="link">Pokemon</a>
+          </span>
         </li>
         <li class="list-item">
-          <a href="#" class="link">Para cantar</a>
+          <span class="ellipsis">
+            <a href="#" class="link">Para cantar</a>
+          </span>
         </li>
         <li class="list-item">
-          <a href="#" class="link">Yui</a>
+          <span class="ellipsis">
+            <a href="#" class="link">Yui</a>
+          </span>
         </li>
 
       </ul>

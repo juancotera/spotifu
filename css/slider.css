@@ -1,0 +1,40 @@
+.slider{
+  inline-size: 200px;
+  background: rgba(255, 255, 255, .2);
+  block-size: .25rem;
+  border-radius: .25rem;
+}
+
+.slider:hover .slider-progress{
+  background: var(--primary);
+}
+
+.slider:hover .slider-button{
+  display: block;
+}
+
+.slider-progress{
+  block-size: inherit; /* inherit hereda los valores del padre que lo contiene en este caso de .slider*/
+  border-radius: inherit;
+  background: var(--white);
+  inline-size: 20%;
+
+  position: relative;
+}
+
+.slider-button{
+ background: var(--white);
+ padding: 0;
+ border: 0;
+
+ block-size: 200%;/*200% para que tome el porcentaje del tamaño del padre en este caso el padre tiene 4px y el tendra 8px*/
+ aspect-ratio: 1/1;/*hacemos un realcion cuadrada con el block-size*/
+ border-radius: 50%;
+
+  /*para esto el padre tiene que ser relativo*/
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
