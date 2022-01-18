@@ -1,0 +1,55 @@
+.playlistA{
+  /* border: 1px solid red; */
+  inline-size: 13em;
+  padding: 1rem;
+  border-radius: .25rem;
+  background: var(--gray40);
+  /*hasta aqui el componente esta desalineado*/
+  box-sizing: border-box;
+  transition: .3s background;
+}
+
+.playlistA:hover, .playlistA:focus-within{ /*focus-within para seleccionar el elemento con TAB*/
+  cursor: pointer;
+  background: var(--gray30);
+}
+
+.playlistA:hover .playlistA-cover button,
+.playlistA:focus-within .playlistA-cover button{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.playlistA-cover img{
+  vertical-align: middle;
+}
+
+.playlistA-cover{
+  position: relative;
+  border-radius: .75rem; /*por ser un elemento padre no aplica el border asiq eu aplicamos overflow*/
+  overflow: hidden;
+  margin-block-end: 1rem;
+}
+
+.playlistA button{
+  position: absolute;
+  /*el elemento posicionado de manera absoluta debe de seguir el flujo, el button esta despues del img*/
+  right: .5rem;
+  bottom: .5rem;
+  opacity: 0;
+  transform: translateY(.5rem);
+  will-change: opacity, transform; /*indicamos que valores cambiaran en la animación*/
+  transition: .3s opacity, .3s transform;
+}
+
+.playlistA-title{
+  font: var(--baseFontBold);
+  color: var(--white);
+  margin: 0;
+}
+
+.playlistA-description{
+  font: var(--baseFont);
+  margin: 0;
+
+}
