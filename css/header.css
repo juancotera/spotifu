@@ -1,0 +1,22 @@
+.header{
+  display: flex;
+  gap: 1rem;
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
+  padding-block-start: 1.5rem;
+  padding-block-end: 1.5rem;
+  align-items: center;
+
+  /*anclar el header, pero ya creamos un componente sticky.css*/
+  /* position: sticky;
+  top: 0;
+  z-index: 1; */
+  backdrop-filter: blur(5px);
+}
+
+/*si el navegador no soporta style podriamos remplazar usando lo siguiente*/
+@supports not(backdrop-filter: blur(5px)){
+  .header{
+    background: var(--gray60);
+  }
+}
