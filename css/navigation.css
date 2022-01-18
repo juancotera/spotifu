@@ -1,5 +1,5 @@
 .navigation{
-  /* border: 1px solid red; */
+  flex-shrink: 0; /*para que los botones de navegación no se colquen en la sigueinte linea nunca*/
 }
 
 .navigation button{
