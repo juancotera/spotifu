@@ -28,6 +28,7 @@
 }
 
 .playlistB-title{
+  inline-size: 7.8125rem; /*para que el boton no se acerque al titulo*/
   font: var(--baseFontBold);
   color: var(--white);
   margin: 0;
@@ -42,4 +43,5 @@
 .playlistB-control{
   opacity: 0;
   transition: .3s;
+
 }
