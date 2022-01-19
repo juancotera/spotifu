@@ -22,8 +22,8 @@
   margin-block-end: 1rem;
 
   /*para recuperar el ancho total del header*/
-  margin-inline-end: -2rem;
-  margin-inline-start: -2em;
+  margin-inline-end: -1.5rem;
+  margin-inline-start: -1.5em;
 
 
 }

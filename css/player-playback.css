@@ -11,7 +11,9 @@
 
 .playerPlayback-progressTime{
   /* border: 1px solid red; */
-  line-height: 1;
   font: var(--small);
   /*top: 1px;*/ /*por si se ve mas arriba i abajo con el slider casos especificos*/
+  line-height: 1;
+  position: relative;
+
 }
